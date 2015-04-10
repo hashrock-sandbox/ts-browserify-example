@@ -1,0 +1,15 @@
+{
+  "repos": [
+    {
+      "url": "https://github.com/borisyankov/DefinitelyTyped.git",
+      "ref": "master"
+    }
+  ],
+  "path": "typings",
+  "bundle": "typings/bundle.d.ts",
+  "dependencies": {
+    "vue/vue.d.ts": {
+      "ref": "d5f92f93bdb49f332fa662ff1d0cc8700f02e4dc"
+    }
+  }
+}

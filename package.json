@@ -1,0 +1,22 @@
+{
+  "name": "ts-browserify-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "npm run build:ts && npm run build:js",
+    "build:js": "browserify ${npm_package_config_src_js} > ${npm_package_config_dist_js}",
+    "build:ts": "tsc src/main.ts --noImplicitAny --module commonjs --outDir build",
+    "clean": "rm dist/*.js build/*.js build/lib/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "src_js": "build/main.js",
+    "dist_js": "bundle.js"
+  },
+  "dependencies": {
+    "vue": "^0.11.5"
+  }
+}
